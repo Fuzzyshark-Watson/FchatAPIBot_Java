@@ -10,8 +10,11 @@ dependencies {
 }
 2: ACCOUNT SETTINGS
 In BotMain you can define where the Local AccountSettings is located.
-public String AccountSettingsFile = "C:\\BotData\\PowerBot\\AccountSettings.txt";
-This file should be kept unavailable by anyone if you upload your program.
+Example: public String AccountSettingsFile = "C:\\BotData\\PowerBot\\AccountSettings.txt";
+
+!!! If you pull this program, make sure the AccountSettingsFile string points to your file !!!
+
+***This file should be kept unavailable by anyone if you upload your program.***
 
 3: ABOUT THE API
 The F-chat API works in the following way:

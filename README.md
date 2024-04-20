@@ -1,3 +1,9 @@
+Important Links:
+F-list API for any other command-strings you need: https://toys.in.newtsin.space/api-docs/#f-list-api 
+F-List Rules:
+https://wiki.f-list.net/F-Chat_Protocol#Bots 
+### ENSURE YOU HAVE EXPLICIT CONSENT TO USE F-LIST, and that your bot profile explicitly states you as its owner and that it is a bot.
+
 1: DEPENDENCIES
 To make this work you need to verify you have all necessary sources, my gradle includes the following dependencies:
 dependencies {

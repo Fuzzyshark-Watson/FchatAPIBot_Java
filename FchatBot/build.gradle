@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+}
+
+group = 'Fuzzcode'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    //Websocket Implementations
+    implementation 'com.squareup.okhttp3:okhttp:5.0.0-alpha.9'
+    //JSON
+    implementation 'org.json:json:20210307'
+}
+
+test {
+    useJUnitPlatform()
+}

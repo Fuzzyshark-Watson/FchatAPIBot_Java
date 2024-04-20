@@ -4,4 +4,8 @@ CharacterName:BotCharacterName;
 CName:BotCharacterName;
 Channel:ChannelNameHere;
 
-To get Channelname /code in your channel, paste that in, and also remove BBcode.
+To get Channelname Type:
+/code
+in your channel. This adds the channel code to your pastebucket. 
+
+Use this code AFTER REMOVING BBCODE.

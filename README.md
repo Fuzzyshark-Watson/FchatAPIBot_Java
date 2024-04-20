@@ -32,7 +32,13 @@ In order to run the program, look at your //todo's and add them accordingly.
 3. Add your commands implementation in the BotCommandController. Draw inspiration from what is already there.
 
 6: STATUS
-Your WebSocketClient has 2 statuses one for debug mode and one for normal running.
+Your WebSocketClient has 2 statuses one for debug mode and one for normal running. Editable from the WebClient.
 
 X: CHAR_ID
 It is possible to get not a character name but a character ID, your BotMain class has this method, which could be used to get a users' ID which wouldn't change when characters are renamed.
+
+Q&A:
+Q:1 I get the following ticket, what do I do?
+Response Code: 200
+Response: {"ticket":"fct_xxxxxxxxxxxxxxxxxxxxxxxxxxxxx","error":""}
+A:1 Good news. Every ticket looks like that, "error" is a field in the response ticket, which is empty. Which means it works! Code 200 means succes.

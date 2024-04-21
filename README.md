@@ -14,6 +14,7 @@ dependencies {
     //JSON
     implementation 'org.json:json:20210307'
 }
+
 2: ACCOUNT SETTINGS
 In BotMain you can define where the Local AccountSettings is located.
 Example: public String AccountSettingsFile = "C:\\BotData\\PowerBot\\AccountSettings.txt";
@@ -49,5 +50,8 @@ Response Code: 200
 Response: {"ticket":"fct_xxxxxxxxxxxxxxxxxxxxxxxxxxxxx","error":""}
 A:1 Good news. Every ticket looks like that, "error" is a field in the response ticket, which is empty. Which means it works! Code 200 means succes.
 
-Q:1 Newlines in output messages breaks the message I'm trying to send!
-A:1 /n doesn't work, try using 'your string first line+ Bot.nl +your string next line'
+Q:2 Newlines in output messages breaks the message I'm trying to send!
+A:2 /n doesn't work, try using 'your string first line+ Bot.nl +your string next line'
+
+Q:3 What to do when I receive: ERR {"number":1,"message":"Syntax error."}
+A:3 ERR is an API response from F-chat that the message was not valid, in this case, go through the message you sent them, bit by bit to locate the problem. It is highly likely that either your newlines or some of the characters you've used for indentation breaks the message.

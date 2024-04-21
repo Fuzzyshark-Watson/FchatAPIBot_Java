@@ -98,6 +98,9 @@ public class WebSocketClient {
                 if (BotMain.DebugMode){System.out.println("Processing PIN command...");}
                 webSocket.send("PIN");
                 break;
+            case "ERR":  //PIN is the server asking if the unit is still active, sent every 30 seconds. Returning PIN is a thumbs up.
+                System.out.println(input);
+                break;
             default:
                 //System.out.println("Unknown command prefix: " + commandPrefix);
                 //You receive a ton of messages so this isn't adviced.

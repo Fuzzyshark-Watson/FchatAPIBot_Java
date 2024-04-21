@@ -37,7 +37,6 @@ public class BotMain {
     public void Run() {
         LoadAccountSettings();
         LoadBotCommands();
-        RequestNewTicket();
         StartWebSocketClient();
     }
     private void StartWebSocketClient() {

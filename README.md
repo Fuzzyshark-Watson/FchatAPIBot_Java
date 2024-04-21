@@ -48,3 +48,6 @@ Q:1 I get the following ticket, what do I do?
 Response Code: 200
 Response: {"ticket":"fct_xxxxxxxxxxxxxxxxxxxxxxxxxxxxx","error":""}
 A:1 Good news. Every ticket looks like that, "error" is a field in the response ticket, which is empty. Which means it works! Code 200 means succes.
+
+Q:1 Newlines in output messages breaks the message I'm trying to send!
+A:1 /n doesn't work, try using 'your string first line+ Bot.nl +your string next line'
